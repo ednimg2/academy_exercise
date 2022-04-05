@@ -1,33 +1,42 @@
 <?php
 
-function add($name)
+function Message($name, $lastname)
 {
-    echo 'Labas '. $name;
+    echo 'Labas '. $name . ' ' . $lastname;
 }
+
+var_dump($argv);
 
 foreach ($argv as $i=>$arg )
 {
-    if ( $arg == "add" )
+    if ($arg == "car_park")
     {
-        add($argv[$i+1]);
+        Message($argv[$i+1], $argv[$i+2]);
+    }
+
+    if ($arg == "create_car")
+    {
+        Message($argv[$i+1], $argv[$i+2]);
     }
 }
 
-// For input
-// Hello World
-$a = readline('Enter a string: ');
 
-// Input section
-// $a = 10
-$a = (int)readline('Enter an integer: ');
+/*$a = readline('Enter a string: ');
 
-// Input 10 20
-list($var1, $var2)
-    = explode(' ', readline(' Enter $var1 and $var2: '));
+echo $a;*/
 
-// For input
-// 1 2 3 4 5 6
-$arr = explode(' ', readline('Enter array (1 2 3 4): '));
+/*$a = (int)readline('Enter an integer: ');
 
-// Input 1 5
-fscanf(STDIN, "%d %d", $a, $b);
+echo $a;*/
+
+//list($var1, $var2) = explode(' ', readline(' Enter $var1 and $var2: '));
+
+//echo $var1.PHP_EOL;
+//echo $var2.PHP_EOL;
+
+//$arr = explode(' ', readline('Enter array (1 2 3 4): '));
+//var_dump($arr);
+
+//fscanf(STDIN, "%d %d", $a, $b);
+
+//echo $a .' '. $b;
