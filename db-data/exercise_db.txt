@@ -1,0 +1,47 @@
+1. Istraukti visus userius ir ju orderius, reikalingi column'ai
+- email,
+- first_name,
+- birthday,
+- order_id,
+- status,
+- delivery_country_id,
+- delivery_method,
+- created_at
+
+1.1. Panaudojant IF arba CASE statusui priskirkite tekstines reiksmes:
+0 - naujas
+1 - apdorojamas
+2 - ivykdytas
+
+1.2. atvaiztuoti delivery_country name, paimti is country lenteles su delivery_country_id
+
+3. Istraukti tik tuos userius, kurie turi orderius. Isvesti orderiu kieki ir bendra orderiu suma
+- user_id
+- email
+- first_name
+- order_count
+- order_sum
+
+3.1 Parodyti tik userius, kurie turi daugiau nei 3 orderius.
+
+4. atvaizduoti order lentoje esanciu orderiu skirtingus delivery_type ir suskaiciuoti kiek kokiu
+tipu yra count.
+Pvz:
+dhl 34
+lpost 190
+dpd 30
+
+5. Istraukti is order lentos duomenis sugrupuotus pagal delivery_city ir suskaiciuoti kiek
+kiekvienas delivery_city turi orderiu, duomenis surusiuoti nuo daugiausiai iki maziausiai
+
+6. Istraukti duomenis is user lentos ir parodyti kiek dabar yra useriui metu
+
+7. Suskaiciuoti product lentoje esanciu produktu bendra kainos suma, parodyti maziausia kaina, dydziausia kaina
+
+8. Istraukti produktus kuriu kaina yra mazesne nei 150
+8.1 Suskaiciuoti produktu kieki, kuriu kaina didesne nei 300
+8.2 Suskaiciuoti produktu kieki, kuriu kaina didesne nei 300 ir produkto deleted = 0
+
+9. Parodyti produktus, kurie buvo parduoti
+9.1 suskaiciuoti kiek kartu jie buvo parduoti
+9.2 suskaiciuoti kiek vienetu buvo parduota ir kokia bendra suma
